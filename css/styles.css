@@ -186,9 +186,10 @@ input::placeholder {
 }
 
 .user-testi {
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 
 .avatar-testimonial {
