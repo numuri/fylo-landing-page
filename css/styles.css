@@ -23,7 +23,8 @@ body {
 }
 
 #header {
-  padding: 1rem 0;
+  padding: 1rem;
+  margin-bottom: 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,4 +49,59 @@ body {
   font-family: var(--headFontFamily);
   font-weight: 700;
   font-size: .9em;
+}
+
+/* Section */
+.section {
+  padding: 0 1rem;
+  margin-bottom: 5rem;
+}
+
+.illustration {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.title,
+.paragraph {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.paragraph {
+  font-size: .95em;
+  width: 90%;
+  margin: 2rem auto;
+}
+
+input,
+button {
+  box-sizing: border-box;
+  display: block;
+  width: 90%;
+  border-radius: 5px;
+}
+
+input {
+  display: block;
+  margin: 0 auto 1em;
+  padding-left: 1.5em;
+  width: 90%;
+  height: 2.5rem;
+  border: 2px solid black;
+}
+
+input::placeholder {
+  color: #ccc;
+}
+
+button {
+  margin: 0 auto;
+  height: 2.3rem;
+  background-color: var(--brightBlue);
+  color: white;
+  font-weight: 600;
+  border: 0;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
