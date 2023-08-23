@@ -95,7 +95,7 @@ input::placeholder {
   color: #ccc;
 }
 
-.main-button {
+.button {
   margin: 0 auto;
   height: 2.3rem;
   background-color: var(--brightBlue);
@@ -205,4 +205,30 @@ input::placeholder {
 
 .sub-title {
   font-size: .5em;
+}
+
+
+/* Section Three */
+.section.three {
+  padding: 4rem 0;
+  background-color: var(--desaturedBlue);
+}
+
+.title.three,
+.paragraph.three {
+  color: white;
+}
+
+.title.three {
+  font-size: 1.2em;;
+}
+
+.paragraph.three {
+  line-height: 1.5em;
+  width: 80%;
+}
+
+input,
+.button {
+  width: 65%;
 }
