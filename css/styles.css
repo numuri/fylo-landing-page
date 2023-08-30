@@ -54,7 +54,6 @@ body {
 /* Section */
 .section {
   padding: 0 1rem;
-  margin-bottom: 9rem;
 }
 
 .illustration {
@@ -104,6 +103,11 @@ input::placeholder {
   border: 0;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+}
+
+/* First Section */
+.section.one {
+  margin-bottom: 9rem;
 }
 
 /* Second Section */
@@ -231,4 +235,52 @@ input::placeholder {
 input,
 .button {
   width: 65%;
+}
+
+/* Footer */
+.main-footer {
+  padding: 4rem 2rem ;
+  background-color: var(--veryDarkBlue);
+  color: white;
+}
+
+.logo-footer {
+  margin-bottom: 2rem;
+  width: 9rem;
+}
+
+.sub-footer {
+  list-style: none;
+  margin-bottom: 3rem;
+}
+
+.sub-footer li {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sub-link a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.sub-link.one,
+.sub-link.two {
+  margin-bottom: 3rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.link-sm img {
+  width: 1.5rem;
+  padding: 8px;
+  border: 1px solid white;
+  border-radius: 50%;
 }
