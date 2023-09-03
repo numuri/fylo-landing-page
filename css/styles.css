@@ -17,11 +17,6 @@
   font-family: 'Raleway', sans-serif;
 }
 
-body {
-  width: 375px;
-  margin: 0 auto;
-}
-
 #header {
   padding: 1rem;
   margin-bottom: 6rem;
@@ -51,7 +46,7 @@ body {
   font-size: .9em;
 }
 
-/* Section */
+/* Main Section */
 .section {
   padding: 0 1rem;
 }
@@ -283,4 +278,78 @@ input,
   padding: 8px;
   border: 1px solid white;
   border-radius: 50%;
+}
+
+
+/* Responsive Breakpoint */
+@media screen and (min-width: 500px) {
+  body {
+    margin: 2rem 3rem;
+  }
+  
+  .logo {
+    width: 8rem;
+  }
+  
+  .head-link {
+    display: flex;
+    gap: 3rem;
+  }
+  
+  .head-link li a {
+    text-decoration: none;
+    color: inherit;
+    font-family: var(--headFontFamily);
+    font-weight: 700;
+    font-size: 1em;
+  }
+
+  /* First Section */
+  .section.one {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .illustration {
+    flex: 1;
+    width: 50%;
+    order: 2;
+  }
+
+  .first-section__main {
+    flex: 1;
+    order: 1;
+    align-self: center;
+  }
+
+  .title,
+  .paragraph {
+    font-size: 2.5em;
+    text-align: left;
+  }
+
+  .paragraph {
+    font-size: 1.15em;
+    width: 100%;
+    margin: 2rem auto;
+  }
+
+  .button__component {
+    width: 90%;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .button {
+    flex: 1;
+    margin: 0 auto;
+    height: 2.3rem;
+    background-color: var(--brightBlue);
+    color: white;
+    font-weight: 600;
+    border: 0;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+
 }
