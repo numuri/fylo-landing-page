@@ -219,7 +219,7 @@ input::placeholder {
 }
 
 .title.three {
-  font-size: 1.2em;;
+  font-size: 1.2em;
 }
 
 .paragraph.three {
@@ -234,7 +234,7 @@ input,
 
 /* Footer */
 .main-footer {
-  padding: 4rem 2rem ;
+  padding: 4rem 2rem;
   background-color: var(--veryDarkBlue);
   color: white;
 }
@@ -283,8 +283,9 @@ input,
 
 /* Responsive Breakpoint */
 @media screen and (min-width: 500px) {
-  body {
-    margin: 2rem 3rem;
+  #header,
+  .section.one {
+    margin: 2rem 3rem;;
   }
   
   .logo {
@@ -306,6 +307,7 @@ input,
 
   /* First Section */
   .section.one {
+    margin-bottom: 15rem;
     display: flex;
     gap: 1rem;
   }
@@ -352,4 +354,121 @@ input,
     cursor: pointer;
   }
 
+  /* Second Section */
+  .section.two {
+    padding: 2rem 0 4em;
+    background-color: #F8F8FE;
+    position: relative;
+  }
+  
+  .bg-curve {
+    z-index: -9999;
+    width: 100%;
+    position: absolute;
+    top: -12rem;
+  }
+  
+  .sub-content {
+    padding: 0  3rem 1rem;
+    z-index: 9999;
+    display: flex;
+    gap: 3rem;
+  }
+  
+  .title.sub {
+    font-size: 2.2em;
+  }
+  
+  .paragraph.sub {
+    width: 85%;
+    margin-left: inherit;
+    margin-bottom: 1rem;
+    font-size: .95em;
+  }
+  
+  .sub-button {
+    margin-bottom: 3rem;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 13.5px;
+  }
+  
+  .link-sub-button {
+    text-decoration: none;
+    font-size: .9em;
+    font-weight: 500;
+    color: #3DA08F;
+  }
+  
+  .arrow-icon{
+    width: 1.5rem;
+  }
+  
+  .underline {
+    width: 29%;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #3DA08F;
+    position: absolute;
+    top: 30px;
+  }
+  
+  .testimonials {
+    width: 40%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-left: inherit;
+  }
+  
+  .messages {
+    font-size: .70em;
+    line-height: 20px;
+    font-weight: 600;
+  }
+
+  /* Third Section */
+  .section.three {
+    display: flex;
+    align-items: center;
+  }
+
+  .three-section__main,
+  .three-section__button {
+    flex: 1;
+  }
+
+  .three-section__main {
+    margin-left: 5rem;
+    padding-top: 50px;
+  }
+
+  .title.three {
+    font-size: 1.5rem;
+    margin-bottom: -20px;
+  }
+
+  .paragraph.three {
+    width: 90%;
+    margin-right: 10rem;
+    font-size: 1em;
+  }
+
+  .three-section__button > .button {
+    width: 25%;
+    margin-left: 7rem;
+  }
+    
+  /* Main Footer */
+  .main-footer {
+    padding: 5rem 5rem 0;
+  }
+
+  .all-link {
+    display: flex;
+    gap: 12.5rem;
+  }
 }
